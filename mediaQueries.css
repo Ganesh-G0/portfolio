@@ -1,48 +1,38 @@
-/* ----------------------------Mobile Nav */
+/* -------------------------------------Mobile Nav */
 @media (hover: hover) {
   .menu-links a:hover {
-    border-radius: 1rem;
     border: 2px solid black;
-    transition: all ease-in 200ms;  
   }
 }
 @media (hover: none) {
   .menu-links a:active {
-    border-radius: 1rem;
     border: 2px solid black;
-    transition: all ease-in 200ms;  
   }
 }
-/* ----------------------------Desktop Nav */
+/* -------------------------------------Desktop Nav */
 @media (hover: hover) {
   .nav-links a:hover {
-    border-radius: 1rem;
     color: var(--purple);
     background-color: white;
-    transition: all ease-in 200ms;  
   }
 }
 @media (hover: none) {
   .nav-links a:active {
-    border-radius: 1rem;
     color: var(--purple);
     background-color: white;
-    transition: all ease-in 200ms;  
   }
 }
-/* ---------------------------------Hero Button*/
+/* -------------------------------------Hero Button*/
 @media (hover:hover) {
   .btn-color-1:hover {
     color: white;
     border-color: #12a7e2;
     background-color: #12a7e2;
-    transition: all ease-in-out 400ms;  
   }
   .btn-color-2:hover {
     color: green;
     border-color: green;
     background-color: white;
-    transition: all ease-in-out 400ms;  
   }
 }
 @media (hover:none) {
@@ -50,51 +40,43 @@
     color: white;
     border-color: #12a7e2;
     background-color: #12a7e2;
-    transition: all ease-in-out 400ms;  
   }
   .btn-color-2:active {
     color: green;
     background-color: white;
     border-color: green;
-    transition: all ease-in-out 400ms;  
   }
 }
-/* --------------------------Projects Button*/
+/* -------------------------------------Projects Button*/
 @media (hover:hover) {
   .projects-grid div:hover {
     color: white;
     background-color: black;
-    transition: all ease-in-out 400ms;
   }
   .projects-grid div:hover .code {
     color: white;
-    transition: all ease-in-out 400ms;
   }
   #view-more-div:hover {
     color: white;
     font-weight: 700;
     background-color: #12a7e2;
-    transition: ease-in-out 400ms;  
   }
 }
 @media (hover:none) {
   .projects-grid div:active {
     color: white;
     background-color: black;
-    transition: all ease-in-out 400ms;
   }
   .projects-grid div:active .code {
     color: white;
-    transition: all ease-in-out 400ms;
   }
   #view-more-div:active {
     color: white;
     font-weight: 700;
     background-color: #12a7e2;
-    transition: ease-in-out 400ms;  
   }
 }
-/* --------------------------Contact Button */
+/* -------------------------------------Contact Button */
 @media (hover:hover){
   .contact-links > a:hover {
     color: #12a7e2;
@@ -107,22 +89,13 @@
     transform: translateY(-6px);
   }
 }
-/* --------------------------Large Mobile */
-@media (min-width: 640px) {  
-  .hero-text-area, .header-text-area, 
-  .skills-item, .contact-links, 
-  .projects-grid { width: 90%; }
-  .title { font-size: 3.1rem; }
-  .subtitle { font-size: 1.9rem; }  
-  .btn { font-size: 1.7rem; }
-  #view-more-div > a { font-size: 2.5rem; }
-  .skills-item > h1 { font-size: 2.8rem; }
-  .skill-name-div > h1  { font-size: 2.2rem; }
-  .skill-name-div > p { font-size: 1.8rem; }
-  .contact-links > a { font-size: 2.5rem; }
-  .frontend-logo { width: 2.5rem; height: 2.5rem; }
+/* -------------------------------------Media Queries */
+@media (min-width: 568px) {  
+  .skills-items-div { flex-direction: row; }
 }
-/* -------------------------------------Tablet */
+@media (min-width: 640px) {  
+  .contact-links { flex-direction: row; flex-wrap: wrap; }
+}
 @media (min-width: 768px) {
   #hamburger-nav { display: none; }
   #desktop-nav {
@@ -133,76 +106,23 @@
     background-color: black;
     font-size: 2rem;    
   }    
-  .hero-text-area, .contact-links { width: 60%; }
-  .header-text-area { width: 40%; }
-  .projects-grid { width: 90%; }
-  .skills-items-div { flex-direction: row; width: 90%; }
-  .title { font-size: 4rem; }
-  .subtitle { font-size: 2.4rem; }  
-  .btn { font-size: 2rem; }
-  #view-more-div > a { font-size: 3rem; }
-  .skills-item > h1 { font-size: 3rem; }
-  .skill-name-div > h1  { font-size: 2.6rem; }
-  .skill-name-div > p { font-size: 2rem; }
-  .contact-links > a { font-size: 3rem; }
-  .frontend-logo { width: 3.3rem; height: 3.3rem; }
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    'spaceE country'
-    'calc age' 
-    'tip dash'
+    'shoes country'
+    'tour planet' 
+    'calc age'
     'btn btn'
     ;
   }
 }
-/* ------------------------------------Computer*/
-@media (min-width: 1024px) {
-  .title { font-size: 4.5rem; }
-  .subtitle { font-size: 2.6rem; }  
-  .btn { font-size: 2.2rem; }
-}
-/* ------------------------------------large Screens*/
-@media (min-width: 1280px) {
-  img {
-    height: 250px;
-  }
-  .hero-text-area, .contact-links { width: 40%; }
-  .projects-grid { width: 90%; }
-  .header-text-area { width: 30%; }
-  .skills-items-div { width: 60%; }    
-  .title { font-size: 4.5rem; }
-  .subtitle { font-size: 2.6rem; }  
-  .btn { font-size: 2.4rem; }
-  #view-more-div > a { font-size: 3.5rem; }
-  .skills-item > h1 { font-size: 3.5rem; }
-  .skill-name-div > h1  { font-size: 2.8rem; }
-  .skill-name-div > p { font-size: 2.4rem; }
-  .contact-links > a { font-size: 3.5rem; }
-  .frontend-logo { width: 3.5rem; height: 3.5rem; }
+@media (min-width: 1024px) { 
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    'spaceE country calc'
-    'age tip dash'
+    'shoes country planet'
+    'tour calc age'
     '. btn .'
     ;
   }
 }
-/* ------------------------------------Extra large Screens*/
-@media (min-width: 1536px) {
-  .hero-text-area {
-    width: 40%;
-  }
-  .title { font-size: 5rem; }
-  .subtitle { font-size: 2.8rem; }  
-  .btn { font-size: 3rem; }
-  .project-title { font-size: 2.5rem; }
-  #view-more-div > a { font-size: 3.5rem; }
-  .skills-item > h1 { font-size: 3.8rem; }
-  .skill-name-div > h1  { font-size: 3rem; }
-  .skill-name-div > p { font-size: 2.6rem; }
-  .contact-links { flex-direction: row; flex-wrap: wrap; }
-  .contact-links > a { font-size: 3.8rem; }
-  .frontend-logo { width: 4rem; height: 4rem; }
-};
